@@ -1,0 +1,27 @@
+##set up
+git config --global user.name "dunguyen0512"
+print user.name = git config --global user.name
+git config --global user.email "dunguyen.inje@gmail.com"
+##unset 
+git config --global --unset user.name "dunguyen0512"
+git config --global --unset user.email "dunguyen.inje@gmail.com"
+
+
+##window cmd:
+
+mkdir folder_name # create folder_name
+cd folder_name # open folder 
+dir # shows files and folders
+cls # clear cmd
+
+## create ssh key 
+- open git BASH: ssh-keygen -t ed25519 -C "example comment"
+- a folder is created /C/users/ndnguyen/.ssh/id_ed25519: 
+- create password, can be bypass by press "ENTER"
+- copy the key name "/c/Users/ndnguyen/.ssh/id_ed25519.pub"
+cmd: cat /c/Users/ndnguyen/.ssh/id_ed25519.pub ->press enter and copy the full key
+***<- key appears on GitBASH
+-open github/setting/ssh and GPG keys, -> create key by inputing "***"
+
+back to GitBASH: 
+cmd: ssh -T git@github.com -> yes 
