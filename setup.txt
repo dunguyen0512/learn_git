@@ -66,15 +66,20 @@ note:only push all committed files
 
 first time with "git push -u origin main" #-u set upstream, established tracking, origin is the remote name. branch is main.
 second time, use "git push".
-if have more than 1 branch, remember to push to the right branch.E.g, main to main, dev branch to dev branch.
 
 Fatal: authentication failed (two-factor authentication). Fix
 Because we already create ssh-keygen then we can make the do the authentication by this commend
 - git remote set-url origin git@github.com:dunguyen0512/learn_git.git
 - git push -u origin main
 
+Attention: if have more than 1 branch, remember to push to the right branch.E.g, main to main, dev branch to dev branch.
 
 
+##### git pull and git fetch ###################
+# get the new source code from others in the repository.
+# git fetch # get update from github to local repository, this stage to check the differences. 
+# if ok, then merging the new update to local by using git merge.
 
+## if no checking, then use git pull. git pull = git fetch + git merge.
 
 
