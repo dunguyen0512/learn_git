@@ -67,7 +67,7 @@ note:only push all committed files
 first time with "git push -u origin main" #-u set upstream, established tracking, origin is the remote name. branch is main.
 second time, use "git push".
 
-Fatal: authentication failed (two-factor authentication). Fix
+Fatal: authentication failed (two-factor authentication). because I was cloning the project instead of init
 Because we already create ssh-keygen then we can make the do the authentication by this commend
 - git remote set-url origin git@github.com:dunguyen0512/learn_git.git
 - git push -u origin main
