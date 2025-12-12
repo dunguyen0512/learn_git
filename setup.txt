@@ -14,7 +14,7 @@ cd folder_name # open folder
 dir # shows files and folders
 cls # clear cmd
 
-## create ssh key 
+###### create ssh key, this is the authentication while pushing the file##########
 - open git BASH: ssh-keygen -t ed25519 -C "example comment"
 - a folder is created /C/users/ndnguyen/.ssh/id_ed25519: 
 - create password, can be bypass by press "ENTER"
@@ -25,3 +25,56 @@ cmd: cat /c/Users/ndnguyen/.ssh/id_ed25519.pub ->press enter and copy the full k
 
 back to GitBASH: 
 cmd: ssh -T git@github.com -> yes 
+
+creating or cloning the project from github.
+########### git comments  ##############
+
+git add  - staging your changes. 
+1/ chose the file to storage into git history (staging area). 
+2/ Move files from working area -> staging area
+3/ create an album before "commit"
+
+git add "filename" :add single file
+git add . : add all changes file
+git add src/ : add a source 
+
+git commit -m "message to operator" -> move file from staging area to local repository with a message
+
+############ logging#########################
+checking git history includes git commits and important changes.
+
+git log # check history
+git log --oneline # shows summary 
+git log -Number # show Number latest commits.
+git log --author="user.name" # check author's commits.
+
+##### git remote ###########
+
+git remote -v # checking the connection with github, if no connection, nothing appears
+https://github.com/dunguyen0512/learn_git.git (fetch) # get changes from github
+https://github.com/dunguyen0512/learn_git.git (push) # sent code to github
+if cloning the repo, connection is established.
+### remove connection 
+git remote remove remote_name
+if new project is init at local PC from commend line, add connection
+- git remote add origin git@github.com:dunguyen0512/project_name.git
+
+#### git push #####
+sent commit from local repository to remote repository
+share code with people, execute CI/CD
+note:only push all committed files
+
+first time with "git push -u origin main" #-u set upstream, established tracking, origin is the remote name. branch is main.
+second time, use "git push".
+if have more than 1 branch, remember to push to the right branch.E.g, main to main, dev branch to dev branch.
+
+Fatal: authentication failed (two-factor authentication). Fix
+Because we already create ssh-keygen then we can make the do the authentication by this commend
+- git remote set-url origin git@github.com:dunguyen0512/learn_git.git
+- git push -u origin main
+
+
+
+
+
+
