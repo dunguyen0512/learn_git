@@ -39,12 +39,5 @@ The new changes only appears on new_branch.
 
 #### merge new_branch to main ####
 2 ways to merge a new_branch. Fast forward merge (FFM) and three-way merge(TWM). 
-FFM: git merge <new_branch>. no commit on main branch. (no conflictions)
-TWM: .Has several new commits on main branch. 
-check git log
-## many people work on one branch. 
-## will have confliction.
-## review code before update 
-## git history is a mess.
-## work on difference branch to reduce conflictions.
-## for example, new application is develop and merge to main branch. (update utilities)
+FFM: git merge <new_branch> ## no commit on main branch. (no conflictions)
+TWM: git merge <new_branch>## Has several new commits on main branch.  need to check all the conflictions 
