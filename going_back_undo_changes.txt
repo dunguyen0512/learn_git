@@ -11,3 +11,8 @@ git restore filename ## delete changes in working directory.
 git restore. ## recover the entire files.
 git restore -- source head~N filename # head~N : number of commits before current commit.eg. Head~1 or Head~2
 Note: git restore can not undo. 
+
+end session 1 
+
+
+end session 2 
