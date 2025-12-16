@@ -39,3 +39,4 @@ The new changes only appears on new_branch.
 
 #### merge new_branch to main ####
 
+test three way merge
