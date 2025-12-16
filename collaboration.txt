@@ -41,3 +41,4 @@ The new changes only appears on new_branch.
 2 ways to merge a new_branch. Fast forward merge (FFM) and three-way merge(TWM). 
 FFM: git merge <new_branch>. no commit on main branch. (no conflictions)
 TWM: .Has several new commits on main branch. 
+check git log
