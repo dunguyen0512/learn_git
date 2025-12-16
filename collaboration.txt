@@ -4,3 +4,31 @@
 ## git history is a mess.
 ## work on difference branch to reduce conflictions.
 ## for example, new application is develop and merge to main branch. (update utilities)
+
+git brand
+creating new brand to dev 
+git head (= point) - work as a bookmark.
+show the location of the working directory.
+Head has 2 working status: "normal head" and "deteached head"
+normal head: head will move in parallel with the main or the latest commit. 
+deteached head: move the head to previous commit, if no branch is created at this time, it will be disappeared. 
+to move to a difference branch: use git checkout main or git switch feature.
+
+how to process a deteached Head
+git checkout <commit_hash>
+git branch <new_branch> # creating new branch
+git switch <new_branch> # switch to new branch
+
+when creating a new branch on main, it will contain all the previous commits from main.
+Remember to switch to new branch using "git switch <new_branch>"
+
+#################delete branch #################
+git branch -d <branch_name> # delete the branch already merged to main.
+git branch -D <branch_name> # hard delete, no need to merge.
+
+############ classify git switch - git checkout ####
+
+git switch # work with branches. 
+git checkout # work with branches, commits, and files.
+git checkout <filename> # recover file 
+git checkout <hash_key> # move to previous commit. 
