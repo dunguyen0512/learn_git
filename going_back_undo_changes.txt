@@ -20,6 +20,6 @@ git reset heshkey
 git reset HEAD~N
 
 git reset has 3 options: mixed (default), --soft, and --hard.
-git reset (default) # keep the current file and remove git add. 
+git reset hash_key (default) # keep the current file and remove git add. 
 git reset --soft # keep staged and working directory
 git reset --hard # all file and changes will be deleted. 
