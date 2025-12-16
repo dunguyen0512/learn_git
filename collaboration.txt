@@ -47,7 +47,7 @@ compare 2 files
 git diff # compare current version in working directory to last commit
 # only appears when the filed was not added. (not in staging)
 git diff --staged # compre when add with last commit. 
-advanced  "git diff" can use to compare 2 commits,compare 2 branches. 
+##### advanced  "git diff" can use to compare 2 commits,compare 2 branches. 
 Most of the the software usually have fix version. Using this to understand what has been changed.
 git diff <commit1> <commit2> --<filename> 
 git diff <branch1> <branch2> --<filename>
