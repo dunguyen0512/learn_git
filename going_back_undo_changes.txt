@@ -18,7 +18,6 @@ git restore --source HEAD~1 .\going_back_undo_changes.txt
 #### git reset #####
 git reset heshkey 
 git reset HEAD~N
-
 git reset has 3 options: mixed (default), --soft, and --hard.
 git reset hash_key (default) # keep the current file and remove git add. 
 git reset --soft # keep staged and working directory
