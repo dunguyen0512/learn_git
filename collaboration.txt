@@ -1,9 +1,9 @@
-## many people work on one branch. 
-## will have confliction.
-## review code before update 
-## git history is a mess.
-## work on difference branch to reduce conflictions.
-## for example, new application is develop and merge to main branch. (update utilities)
+## many people work on one branch. ##
+## will have confliction. ##
+## review code before update ##
+## git history is a mess.##
+## work on difference branch to reduce conflictions.##
+## for example, new application is develop and merge to main branch. (update utilities)##
 
 git brand
 creating new brand to dev 
@@ -22,11 +22,11 @@ git switch <new_branch> # switch to new branch
 when creating a new branch on main, it will contain all the previous commits from main.
 Remember to switch to new branch using "git switch <new_branch>"
 
-#################delete branch #################
+## delete branch ##
 git branch -d <branch_name> # delete the branch already merged to main.
 git branch -D <branch_name> # hard delete, no need to merge.
 
-############ classify git switch - git checkout ####
+##classify git switch - git checkout ##
 
 git switch # work with branches. 
 git checkout # work with branches, commits, and files.
@@ -42,7 +42,7 @@ The new changes only appears on new_branch.
 FFM: git merge <new_branch> ## no commit on main branch. (no conflictions)
 TWM: git merge <new_branch>## Has several new commits on main branch.  need to check all the conflictions 
 
-##### git difference ####
+## git difference ##
 compare 2 files
 git diff # compare current version in working directory to last commit
 # only appears when the filed was not added. (not in staging)
