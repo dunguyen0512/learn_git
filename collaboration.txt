@@ -42,3 +42,9 @@ The new changes only appears on new_branch.
 FFM: git merge <new_branch>. no commit on main branch. (no conflictions)
 TWM: .Has several new commits on main branch. 
 check git log
+## many people work on one branch. 
+## will have confliction.
+## review code before update 
+## git history is a mess.
+## work on difference branch to reduce conflictions.
+## for example, new application is develop and merge to main branch. (update utilities)
