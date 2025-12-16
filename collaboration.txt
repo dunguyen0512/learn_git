@@ -34,3 +34,8 @@ git checkout <filename> # recover file
 git checkout <hash_key> # move to previous commit. 
 Example: a new branch is created, and when showing all the loggile. new_branch contains all the commits. 
 cmd: aeed82d (HEAD -> new_branch, main) practice branch -checkout.
+when having commit on new_branch, all the changes will be disappeared on main. 
+The new changes only appears on new_branch.
+
+#### merge new_branch to main ####
+
