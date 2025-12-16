@@ -41,3 +41,18 @@ The new changes only appears on new_branch.
 2 ways to merge a new_branch. Fast forward merge (FFM) and three-way merge(TWM). 
 FFM: git merge <new_branch> ## no commit on main branch. (no conflictions)
 TWM: git merge <new_branch>## Has several new commits on main branch.  need to check all the conflictions 
+
+##### git difference ####
+compare 2 files
+git diff # compare current version in working directory to last commit
+# only appears when the filed was not added. (not in staging)
+git diff --staged # compre when add with last commit. 
+advanced  "git diff" can use to compare 2 commits,compare 2 branches. 
+Most of the the software usually have fix version. Using this to understand what has been changed.
+git diff <commit1> <commit2> --<filename> 
+git diff <branch1> <branch2> --<filename>
+Example:
+diff --git a/collaboration.txt b/collaboration.txt ### compare files
+index f1d282f..f7100d1 100644 ## hash version
+--- a/collaboration.txt ## old version
++++ b/collaboration.txt ## new version
